@@ -1,0 +1,86 @@
+body{
+    background-image: url("pic/diluc_wp.jpg");
+    font-family: system-ui;
+}
+.Container{
+    background-color:#fff;
+    width: 50%;
+    max-width: 100%;
+    margin:auto;
+    padding:50px;
+    display:grid;
+    grid-template-columns: 25% 70%;
+    column-gap: 5%;
+}
+.avatar img{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.avatar{
+    display: flex;
+    justify-content: center;
+}
+.name{
+    padding-left: 30px;
+}
+.name h1{
+    font-weight: 300;
+    font-size: xx-large;
+    margin:0 0 5px;
+}
+.name .specialize{
+    margin:0;
+    font-weight:bold;
+}
+.name .contact{
+    padding:0;
+    list-style:none;
+}
+.info ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align:right;
+    line-height:30px;
+}
+.intro{
+    padding-left:30px;
+    border-left:1px solid #000;
+    text-align:justify;
+}
+h2{
+    padding:0;
+    margin:0 0 20px;
+}
+.exp{
+    margin-top:20px;
+}
+.skills{
+    margin-top:20px;
+}
+.exp ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    line-height:25px;
+}
+.project{
+    padding-left:30px;
+    text-align:justify;
+    border-left:1px solid #000;
+}
+table {
+    border: 4px solid black;
+}
+th, td {
+    border: 1.5px solid black;
+    color:blue;
+    background-color:pink;
+  }
+input, textarea{
+    background-color:cornflowerblue;
+    color:red;
+}
+

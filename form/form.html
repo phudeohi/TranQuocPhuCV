@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="form.css">
+<form>
+<table style="width:500px; margin:auto;">
+  <tr>
+    <td colspan="2" class="title">ĐĂNG KÝ THÀNH VIÊN CLB YÊU NHẠC</td>
+  </tr>
+  <tr>
+    <td style="width:30%"><label for="name">Họ tên</label><br></td>
+    <td><input type="text" id="name" name="name"><br></td>
+  </tr>
+  <tr>
+    <td><label for="user">Tên đăng nhập</label></td>
+    <td><input type="text" id="user" name="user"><br></td>
+  </tr>
+  <tr>
+    <td><label for="pw">Mật khẩu</label></td>
+    <td><input type="password" id="pw" name="pw"><br></td>
+  </tr>
+  <tr>
+    <td><label for="rpw">Gõ lại mật khẩu</label></td>
+    <td><input type="password" id="rpw" name="rpw"><br></td>
+  </tr>
+  <tr>
+    <td><label for="phai">Phái</label></td>
+    <td><input type="radio" id="phai" name="sex" value="Nam">Nam</input><input type="radio" id="phai" name="sex" value="Nữ">Nữ</input></td>
+  </tr>
+  <tr>
+    <td><label for="language">Ngoại ngữ</label></td>
+    <td><input type="checkbox" id="language" name="flanguage" value="anh">Anh</input><input type="checkbox" id="language" name="flanguage" value="phap">Pháp</input><input type="checkbox" id="language" name="flanguage" value="hoa">Hoa</input></td>
+  </tr>
+  <tr>
+    <td>Nghề nghiệp</td>
+    <td><input list="browsers">
+      <datalist id="browsers">
+        <option value="Học sinh - Sinh viên">
+      </datalist></td>
+  </tr>
+  <tr>
+    <td>Hình</td>
+    <td></td>
+  </tr>
+  <tr style="height:100px">
+    <td>Sở thích</td>
+    <td><textarea name="message" rows="10" cols="30">
+</textarea></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</form>

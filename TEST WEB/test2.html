@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Resume</title>
+</head>
+
+<body>
+    <div id="resume">
+        <img src="ảnh cho cuối kì/DSC_4221.JPG" alt="Trần Hoàng Thắng">
+        <h1>Trần Hoàng Thắng</h1>
+        <p>Cell: <a href=#>+84906332424</a>
+        <p>Web: <a href=#>thangdeptrai.com</a>
+        <p>Email: <a href=#>Hoangthangx00@gmail.com</a>
+        <p id="objective">I am a person who always wants to improve my knowledge and create products that can meet the needs of customers. 
+            And want to advance to be able to fulfill this dream.
+        <dl>
+            <dt>Education
+            <dd>
+                <h2>Nguyen Tat Thanh University</h2>
+                <p><strong>Specialization</strong> Software Engineer<br />
+                </p>
+        </dl>
+        <dl>
+            <dt>Skills
+            <dd>
+                <h2>Office Skills</h2>
+                <p>Office and records management, database administration, event organization, customer support, travel
+                    coordination
+                <h2>Computer skills</h2>
+                <p>Microsoft productivity software (Word, Excel, etc), Adobe Creative Suite, Windows
+        </dl>
+        <dl>
+            <dt>Experience
+            <dd>
+                <p><strong>Non-Experience</strong></p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>Hobbies
+            <dd>Games, Films , Powerpoint Design, Photography 
+        </dl>
+        <dl>
+            <dt>Strengths
+            <dd>Fast learning, Good problem solving
+        </dl>
+    </div>
+        <h2 style="text-align:center; background-color: black; color: white">Slideshow Gallery</h2>
+        <div class="container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="https://i.pinimg.com/564x/61/e9/1c/61e91c5c2d33ca9f0a0dd196784ab7a3.jpg" style="width:100%; height:30cqmax">
+                </div>
+                <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="https://i.pinimg.com/564x/09/a9/4e/09a94e036d3938294a4c289a55f78fce.jpg" style="width:100%; height:30cqmax">
+                </div>
+                <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="img_mountains_wide.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="img_lights_wide.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="img_nature_wide.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="img_snow_wide.jpg" style="width:100%">
+                </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="https://i.pinimg.com/236x/88/c0/be/88c0be7a1ca152820a302efc9f6f8c4a.jpg" style="width:100%; height:100px;" onclick="currentSlide(1)" alt="The Woods">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="https://i.pinimg.com/564x/e1/d5/5f/e1d55f401caf4cc21083bff10eb69fbf.jpg" style="width:100%; height:100px;" onclick="currentSlide(2)" alt="Cinque Terre">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="https://i.pinimg.com/236x/b9/dc/dd/b9dcddaed9961ed58d3dd72e8a0eef6a.jpg" style="width:100%; height:100px;" onclick="currentSlide(3)" alt="Mountains and fjords">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="https://i.pinimg.com/236x/f2/44/5c/f2445c37d07ae7a2cb327330bed3ae13.jpg" style="width:100%; height:100px" onclick="currentSlide(4)" alt="Northern Lights">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="https://i.pinimg.com/564x/ac/90/cb/ac90cba70bea7925c27449455bf9d8c7.jpg" style="width:100%; height:100px" onclick="currentSlide(5)" alt="Nature and sunrise">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="https://i.pinimg.com/236x/e4/fd/85/e4fd85e957b9e2044f872dffcca6090f.jpg" style="width:100%; height:100px" onclick="currentSlide(6)" alt="Snowy Mountains">
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("demo");
+                let captionText = document.getElementById("caption");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            }
+                for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+            }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+        </script>
+</body>
+</html>
+<link rel="stylesheet" href="style2.css" />
